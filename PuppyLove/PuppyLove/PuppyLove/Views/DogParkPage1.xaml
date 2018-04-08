@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.DogParkPage1">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20">
+            <Label Text="Puppy Love recommends that the first date experience will be taking your furry friend to the dog park. Please select the top 3 dog parks you would like to meet up with."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Keep in mind: You are not only limited to meet at these dog parks selected, but we leverage the information to help match people together."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button 
+                x:Name="ButtonDogPark1Next"            
+                Text="I agree - Next"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="Handle_DogPark1Next_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+            <Button 
+                x:Name="ButtonDogPark1Cancel"            
+                Text="Cancel"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="Handle_DogPark1Cancel_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

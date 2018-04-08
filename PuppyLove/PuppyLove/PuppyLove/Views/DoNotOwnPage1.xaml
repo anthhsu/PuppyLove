@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.DoNotOwnPage1">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20">
+            <Label Text="Puppy Love is intended to connect dog owners together, users who do not own a dog will be connected with other users who do not own a dog. Dog owners will have the option to accept dates with a non-dog owner, but it is 100% up to the user."                  
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button 
+                x:Name="ButtonDoNotOwn1Continue"            
+                Text="I Agree - Continue"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="Handle_DoNotOwn1Continue_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+            <Button 
+                x:Name="ButtonDoNotOwn1Cancel"            
+                Text="Cancel"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="Handle_DoNotOwn1Cancel_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

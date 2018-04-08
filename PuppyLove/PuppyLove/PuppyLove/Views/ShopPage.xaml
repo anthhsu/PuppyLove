@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.ShopPage">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20">
+            <Label                 
+                Text="This section will figure all our awesome vendors; must have dog-gear' 'Treat Yourself'; Pet Shelter Monthly Spotlight"
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand"
+                FontSize="Small"/>
+            <Grid                                                
+                VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Label Text="Featured Shop Items" Grid.Row="0"/>
+                <ScrollView BackgroundColor="AliceBlue" Grid.Row="1">
+                    <Grid x:Name="gridItems"></Grid>
+                </ScrollView>
+
+                <Label Text="Featured Vendors" Grid.Row="3"/>
+                <ScrollView BackgroundColor="AliceBlue" Grid.Row="4">
+                    <Grid x:Name="gridVendors"></Grid>
+                </ScrollView>
+
+                <Label Text="Monthly Pet Shleter Highlight" Grid.Row="6"/>
+                <ScrollView BackgroundColor="AliceBlue" Grid.Row="7">
+                    <Grid x:Name="gridShelters"></Grid>
+                </ScrollView>
+            </Grid>
+
+            <Button 
+                x:Name="ButtonShopBack"  
+                Text="Take me back before I break the bank!"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                WidthRequest="300"
+                HeightRequest="50"
+                Clicked="Handle_ShopBack_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

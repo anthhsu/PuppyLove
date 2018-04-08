@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.DoNotOwnPage2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="In addition, for non-dog owner dates, we encourage the first date to be at a local pet shelter. Together, y'all can help a shelter in need by walking and caring for the dogs while getting to know each other."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button 
+                x:Name="ButtonDoNotOwn2Yes"            
+                Text="Change the world while meeting someone super awesome? Count me in."
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"               
+                HeightRequest="50"
+                Clicked="Handle_DoNotOwn2Yes_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+            <Button 
+                x:Name="ButtonDoNotOwn2No"            
+                Text="I'm not ready for that kind of commitment."
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="Handle_DoNotOwn2No_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

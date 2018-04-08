@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.DogParkPage3">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20">
+            <Label Text="As a dog owner, you have the option within the app to meet non-dog owners. We hope that these users are still dog lovers (the main purpose of this app) and still have those qualities even without owning a dog. If you would also like to include non-dog owners in your match criteria, please check the box below. You can always turn on and off this feature in your account settings."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button
+                x:Name="ButtonDogPark3Continue"            
+                Text="Continue"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="Handle_DogPark3Continue_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

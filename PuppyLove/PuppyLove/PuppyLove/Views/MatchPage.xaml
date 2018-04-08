@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             x:Class="PuppyLove.Views.MatchPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Button 
+                x:Name="buttonMatchBack"
+                Text="Take me back before I break the bank!"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                WidthRequest="300"
+                HeightRequest="50"
+                BorderWidth="1"
+                BorderColor="Black"
+                AbsoluteLayout.LayoutBounds="0.5, 0.9"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                Clicked="Handle_MatchBack_Clicked"/>
+            <Label  
+                x:Name="label1"
+                Text="Now let's learn how to sniff out a match."                
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="Small"
+                AbsoluteLayout.LayoutBounds="0.5, 0.1"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <cv:CarouselView
+                AbsoluteLayout.LayoutBounds="0.5,0.4,.75,0.5"
+                AbsoluteLayout.LayoutFlags="All"
+                x:Name="carouselMatch"
+                ItemsSource="{Binding People}">
+                <cv:CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding ImageURL}" Grid.RowSpan="3" Aspect="AspectFill"/>
+                    </DataTemplate>
+                </cv:CarouselView.ItemTemplate>
+            </cv:CarouselView>
+            <AbsoluteLayout                
+                x:Name="layoutTutorial"
+                AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                AbsoluteLayout.LayoutFlags="All">
+                <Button
+                    x:Name="buttonTutorial"                    
+                    Clicked="Handle_Tutorial_Clicked"                    
+                    AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All"/>
+                <BoxView
+                    Color="DarkGray"                   
+                    AbsoluteLayout.LayoutBounds="0.5, 0.4, 0.75, 0.15"
+                    AbsoluteLayout.LayoutFlags="All">
+                </BoxView>
+                <Label                    
+                    x:Name="labelTutorial"
+                    LineBreakMode="WordWrap"
+                    Text="Each user will have 3 pictures; swipe over to see each picture"
+                    FontSize="Small"                   
+                    HorizontalTextAlignment="Center"                   
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.7, 0.25"
+                    AbsoluteLayout.LayoutFlags="All"/>
+                <Button                    
+                    AbsoluteLayout.LayoutBounds="0.5, 0.4, 0.75, 0.15"
+                    AbsoluteLayout.LayoutFlags="All"
+                    Clicked="Handle_Tutorial_Clicked"/>
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>      

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.SignupPage2">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20">
+            <Entry
+                x:Name="EntryEmail"
+                Placeholder="Email"
+                PlaceholderColor="LightGray"
+                WidthRequest="200"/>
+            <Entry
+                x:Name="EntryPhone"
+                Placeholder="Phone Number"
+                PlaceholderColor="LightGray"
+                WidthRequest="200"/>
+            <Entry
+                x:Name="EntryUsername"
+                Placeholder="Username"
+                PlaceholderColor="LightGray"
+                WidthRequest="200"/>
+            <Entry
+                x:Name="EntryPassword"
+                IsPassword="True"
+                Placeholder="Password (min. 6 characters)"
+                PlaceholderColor="LightGray"
+                WidthRequest="200"/>
+            <Entry
+                x:Name="EntryConfirmPassword"
+                IsPassword="True"
+                Placeholder="Confirm Password"
+                PlaceholderColor="LightGray"
+                WidthRequest="200"/>
+            <Image
+                Source="Signup2Logo.png"
+                Aspect="AspectFit"/>
+            <Button
+                x:Name="ButtonSignup2Next"
+                Text="Next"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                BorderWidth="1"
+                BorderColor="Black"
+                Clicked="Handle_Signup2Next_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

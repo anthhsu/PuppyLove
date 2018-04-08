@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.EmailVerification">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20">
+            <Label Text="Please Enter The 5 Digit Email Verification Code"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />                
+            
+            <Grid
+                Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Entry
+                    x:Name="EntryValidationCode1"
+                    Placeholder="0"
+                    PlaceholderColor="LightGray"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+                <Entry
+                    x:Name="EntryValidationCode2"
+                    Placeholder="0"
+                    PlaceholderColor="LightGray"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+                <Entry
+                    x:Name="EntryValidationCode3"
+                    Placeholder="0"
+                    PlaceholderColor="LightGray"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Grid.Row="0"
+                    Grid.Column="2"/>
+                <Entry
+                    x:Name="EntryValidationCode4"
+                    Placeholder="0"
+                    PlaceholderColor="LightGray"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Grid.Row="0"
+                    Grid.Column="3"/>
+                <Entry
+                    x:Name="EntryValidationCode5"
+                    Placeholder="0"
+                    PlaceholderColor="LightGray"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Grid.Row="0"
+                    Grid.Column="4"/>
+            </Grid>
+
+            <Button 
+                x:Name="ButtonResend"            
+                Text="Resend Code?"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="Handle_Resend_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+            <Button 
+                x:Name="ButtonEmailVerificationContinue"            
+                Text="Continue"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="Handle_EmailVerificationContinue_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.SignupPage4">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20">
+            <Label Text="Tell us about your dog..."
+                HorizontalOptions="CenterAndExpand" />
+            <StackLayout>
+                <Entry
+                    x:Name="EntryBreed"
+                    Placeholder="Breed"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="200"/>
+                <Entry
+                    x:Name="EntryPetName"
+                    Placeholder="Pet's Name"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="200"/>
+                <Entry
+                    x:Name="EntryPetAge"
+                    Placeholder="Pet's Age"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="200"/>
+                <Entry
+                    x:Name="EntryPetWeight"
+                    Placeholder="Estimated Weight"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="200"/>
+                <Entry
+                    x:Name="EntrySpayed"
+                    Placeholder="Spayed or Neutered?"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="200"/>
+            </StackLayout>
+            <Button 
+                x:Name="ButtonDoNotOwn"            
+                Text="I don't own one"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="Handle_DoNotOwn_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+            <Button 
+                x:Name="ButtonSignup4Next"            
+                Text="Next"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="Handle_Signup4Next_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

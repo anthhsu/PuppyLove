@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.HomePage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Button 
+                x:Name="buttonExitTutorial"
+                Text="Just like my game, I'm going to wing it; Skip Tutorial Please"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                WidthRequest="300"
+                HeightRequest="50"
+                BorderWidth="1"
+                BorderColor="Black"
+                AbsoluteLayout.LayoutBounds="0.5, 0.8"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                Clicked="Handle_ExitTutorial_Clicked"/>
+            <Grid
+                Padding="20"
+                RowSpacing="20"
+                ColumnSpacing="5"
+                AbsoluteLayout.LayoutBounds="0,0.15,1,0.4"
+                AbsoluteLayout.LayoutFlags="All">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button
+                    Image="IconAbout.png"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    WidthRequest="70"                    
+                    HeightRequest="70"
+                    Clicked="Handle_AboutButton_Clicked"/>
+                <Button
+                    Image="IconShop.png"
+                    Grid.Row="0"
+                    Grid.Column="4"
+                    Grid.ColumnSpan="3"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    WidthRequest="70"                    
+                    HeightRequest="70"
+                    Clicked="Handle_ShopButton_Clicked"/>
+                <Button
+                    Image="IconMatch"
+                    Grid.Row="0"
+                    Grid.Column="8"
+                    Grid.ColumnSpan="3"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    WidthRequest="70"                    
+                    HeightRequest="70"
+                    Clicked="Handle_MatchButton_Clicked"/>
+                <Button
+                    Image="IconChat.png"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="3"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    WidthRequest="70"                    
+                    HeightRequest="70"
+                    Clicked="Handle_ChatButton_Clicked"/>
+                <Button
+                    Image="IconProfile.png"
+                    Grid.Row="1"
+                    Grid.Column="6"
+                    Grid.ColumnSpan="3"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    WidthRequest="70"                    
+                    HeightRequest="70"
+                    Clicked="Handle_ProfileButton_Clicked"/>
+            </Grid>
+
+            <AbsoluteLayout
+                x:Name="layoutTutorial"
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All">
+                <Button
+                    x:Name="buttonTutorial"                    
+                    Clicked="Handle_Tutorial_Clicked"
+                    AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All"/>
+                <BoxView
+                    Color="DarkGray"                   
+                    AbsoluteLayout.LayoutBounds="0.5, 0.6, 0.75, 0.15"
+                    AbsoluteLayout.LayoutFlags="All">
+                </BoxView>
+                <Label                    
+                    x:Name="labelTutorial"
+                    LineBreakMode="WordWrap"
+                    Text="Before you begin, click on each icon to understand each function"
+                    TextColor="White"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"    
+                    FontAttributes="Bold"
+                    AbsoluteLayout.LayoutBounds="0.5, 0.72, 0.7, 0.25"
+                    AbsoluteLayout.LayoutFlags="All"/>
+                <Button                    
+                    AbsoluteLayout.LayoutBounds="0.5, 0.6, 0.75, 0.15"
+                    AbsoluteLayout.LayoutFlags="All"
+                    Clicked="Handle_Tutorial_Clicked"/>
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
