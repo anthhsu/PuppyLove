@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.DoNotOwnPage3">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20">
+            <Entry
+                Placeholder="Please enter Zip Code"/>
+            <Label Text="Please check off all the shelters you would like to meet/help out at. (Must select at least one)"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <ListView>
+                
+            </ListView>
+            <Button 
+                x:Name="ButtonDoNotOwn3Continue"            
+                Text="Continue"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="Handle_DoNotOwn3Continue_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.OptionalQuestionsPage">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20">
+            <Label Text="Optional Questions or save the magic for the day of..."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry
+                    x:Name="EntryHometown"
+                    Placeholder="Hometown"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="200"/>
+            <Entry
+                    x:Name="EntryFood"
+                    Placeholder="Favorite Food"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="200"/>
+            <Entry
+                    x:Name="EntryShow"
+                    Placeholder="Favorite Show"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="200"/>
+            <Entry
+                    x:Name="EntryHobby"
+                    Placeholder="Favorite Hobby"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="200"/>
+            <Entry
+                    x:Name="EntryRandom"
+                    Placeholder="Something Random"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="200"/>
+            <Button
+                x:Name="ButtonComplete"
+                Text="Complete"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="200"
+                HeightRequest="50"
+                BorderWidth="1"
+                BorderColor="Black"
+                Clicked="Handle_Complete_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

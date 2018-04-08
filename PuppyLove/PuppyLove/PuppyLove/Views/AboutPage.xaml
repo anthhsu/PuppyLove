@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.AboutPage">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20">
+            <Label 
+                Text="We honestly aren't sure why you clicked this button for the tutorial, but if you really wanted to know, this page will contain:"                                
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand"
+                FontSize="Small"/>
+            <Grid                
+                RowSpacing="20"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+                               
+                <Label FontSize="Small" Text="Mission Statement" Grid.Row="0" Grid.Column="1"/>
+                <Label FontSize="Small" Text="Our History" Grid.Row="1" Grid.Column="1"/>
+                <Label FontSize="Small" Text="A Little Bit about our Dogs" Grid.Row="2" Grid.Column="1"/>
+                <Label FontSize="Small" Text="Navigating the App" Grid.Row="3" Grid.Column="1"/>
+                <Label FontSize="Small" Text="Become a Featured Vendor " Grid.Row="4" Grid.Column="1"/>
+                <Label FontSize="Small" Text="Contact Us (Questions or Support)" Grid.Row="5" Grid.Column="1"/>
+                                
+                <Label Text="o" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="o" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="o" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="o" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="o" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="o" Grid.Row="5" Grid.Column="0"/>
+            </Grid>
+
+            <Button 
+                x:Name="ButtonAboutBack"  
+                Text="You're Right… not sure why I clicked here, take me back"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                WidthRequest="300"
+                HeightRequest="50"
+                Clicked="Handle_AboutBack_Clicked"
+                BorderWidth="1"
+                BorderColor="Black"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

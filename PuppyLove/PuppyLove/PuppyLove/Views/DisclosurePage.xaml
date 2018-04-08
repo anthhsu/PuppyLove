@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PuppyLove.Views.DisclosurePage">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20">
+            
+            <Label Text="This dating app is meant to connect dog owners together. This app is not intended for breeding or mating dogs. Please proceed with caution with selecting owners to be matched with."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button
+                x:Name="ButtonDisclosure"
+                Text="I understand and wish to proceed."
+                HorizontalOptions="Center"
+                VerticalOptions="Center"            
+                WidthRequest="300"
+                HeightRequest="50"
+                BorderWidth="1"
+                BorderColor="Black"
+                Clicked="Handle_Understand_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
